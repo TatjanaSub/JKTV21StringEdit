@@ -21,7 +21,40 @@ public class JKTV21StringEdit {
         System.out.println("Vvedite text");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        System.out.println("Kol-vo simvolov: " + str.length());
+        do{
+            System.out.println("Funktsii programmq:");
+            System.out.println("0. Vqhod iz programmq");
+            System.out.println("1. Vqvesti kol-vo simvilov");
+            System.out.println("2. Vqvesti kol-vo slov");
+            System.out.println("3. Naiti slovo v stroke");
+            System.out.println("4. zamenit ukazannoe slovo v stroke");
+            System.out.println("Vqberite nomer funktsii: ");
+            int number = scanner.nextInt();
+            scanner.nextLine();
+            if(number == 0){
+                break;
+            }else if(number == 1){
+                System.out.println("Vq vqbrali punkt " + number);
+                System.out.println("Kol-vo simvolov: " + str.length());
+            }else if(number == 2){
+                System.out.println("Vq vqbrali punkt " + number);
+                String[] words = str.split(" ");
+                System.out.println("Kol-vo slov: " + words.length);
+            }else if(number == 3){
+                System.out.println("Vq vqbrali punkt " + number);
+                System.out.println("Kakoe slovo naiti: ");
+                String subStr = scanner.nextLine();
+                int index = str.indexOf(subStr);
+                if(index < 0){
+                    
+                }else{
+                    index++;
+                }
+            }else if(number == 4){
+                System.out.println("Vq vqbrali punkt " + number);
+            }
+            
+        }while(true);
     }
     
     
