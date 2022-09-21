@@ -5,6 +5,8 @@
  */
 package jktv21stringedit;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pupil
@@ -17,6 +19,9 @@ public class JKTV21StringEdit {
     public static void main(String[] args) {
         System.out.println("-------- Stroki v Java ----------");
         System.out.println("Vvedite text");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
     }
+    
     
 }
