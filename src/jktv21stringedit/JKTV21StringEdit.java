@@ -16,6 +16,7 @@ public class JKTV21StringEdit {
      */
     public static void main(String[] args) {
         System.out.println("-------- Stroki v Java ----------");
+        System.out.println("Vvedite text");
     }
     
 }
