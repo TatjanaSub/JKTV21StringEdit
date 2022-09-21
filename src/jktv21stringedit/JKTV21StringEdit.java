@@ -21,6 +21,7 @@ public class JKTV21StringEdit {
         System.out.println("Vvedite text");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+        System.out.println("Kol-vo simvolov: " + str.length());
     }
     
     
