@@ -66,7 +66,6 @@ public class JKTV21StringEdit {
                     System.out.println(str.replace(strOld, strNew));
                 }
             }
-            
         }while(true);
     }
     
