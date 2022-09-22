@@ -5,6 +5,7 @@
  */
 package jktv21stringedit;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -36,7 +37,19 @@ public class JKTV21StringEdit {
                 break;
             }else if(number == 1){
                 System.out.println("Vq vqbrali punkt " + number);
-                System.out.println("Kol-vo simvolov: " + str.length());
+                int count = 0;
+                char[] chars = {'a','b','c','d','i','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+                HashSet set = new HashSet();
+                for (int i = 0; i < chars.length; i++){
+                   set.add(chars[i]);
+                }
+                String strLowerCase = str.toLowerCase();
+                for (int i = 0; i < strLowerCase.length(); i++){
+                    if(set.contains(str.charAt(i))){
+                        count++;
+                    }
+                }
+                System.out.println("Kol-vo simvolov: " + count);
             }else if(number == 2){
                 System.out.println("Vq vqbrali punkt " + number);
                 String[] words = str.split(" ");
